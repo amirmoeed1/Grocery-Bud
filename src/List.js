@@ -17,7 +17,7 @@ const List = ({ items: initialItems, removeItem, editItem }) => {
   );
   const [totalBill, setTotalBill] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
-  // const [newItemTitle, setNewItemTitle] = useState("");
+  const [newItemTitle, setNewItemTitle] = useState("");
 
   useEffect(() => {
     localStorage.setItem("quantities", JSON.stringify(quantities));
